@@ -13,16 +13,7 @@ pinned: false
 
 ## Google Colab Notebook
 
-專案包含 [`Colab_Demo.ipynb`](./Colab_Demo.ipynb)，可在 Colab 執行三套偵測器的合成資料 Demo。
-
-1. 在 PowerShell 專案目錄執行以下指令，建立只含三個偵測器的 ZIP：
-
-   ```powershell
-   Compress-Archive -Path anomaly_detector.py,pixel_reference_detector.py,patch_knn_detector.py -DestinationPath colab_project.zip -Force
-   ```
-
-2. 將 Notebook 開啟於 Google Colab，依序執行儲存格，並在上傳步驟選取 `colab_project.zip`。
-3. Notebook 會在 Colab 產生模型、熱區圖、疊圖與 JSON 結果。
+專案包含 [`Colab_Demo.ipynb`](./Colab_Demo.ipynb)，可在 Colab 執行三套偵測器的合成資料 Demo。公開儲存庫完成推送後，可直接從 [Google Colab 開啟 Notebook](https://colab.research.google.com/github/goalanwork-rgb/pytorch_demo/blob/main/Colab_Demo.ipynb)；Notebook 會自動從 GitHub 載入程式碼，再產生模型、熱區圖、疊圖與 JSON 結果。
 
 ## 免費互動式網站（Streamlit Community Cloud）
 
